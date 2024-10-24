@@ -12,6 +12,7 @@ import SwiftData
 class Movie {
     var title: String
     var releaseDate: Date
+    var favoritedBy = [Friend]()
     
     init(title: String, releaseDate: Date) {
         self.title = title
@@ -22,5 +23,6 @@ class Movie {
         Movie(title: "The Shawshank Redemption", releaseDate: .init(timeIntervalSince1970: 1571423200)),
         Movie(title: "The Godfather", releaseDate: .init(timeIntervalSince1970: 1572518400)),
         Movie(title: "The Dark Knight", releaseDate: .init(timeIntervalSince1970: 1587843200)),
-    ]
+        Movie(title: "The Three Sons", releaseDate: .init(timeIntervalSince1970: 1572518400)),
+        Movie(title: "The Lost In Paradise", releaseDate: .init(timeIntervalSince1970: 1587843200)),    ]
 }
